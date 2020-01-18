@@ -1,10 +1,11 @@
 import React from 'react';
 
-const Details = ({city})=>{
+
+const Details = ({city, kelvinToCelcius})=>{
     return(
      <div style={{lineHeight:'1.5em'}}>
-         <p>min temp:  {city.main.temp_min}</p>
-         <p>max temp:  {city.main.temp_max}</p>
+         <p>min temp: {kelvinToCelcius(city.main.temp_min)} °C</p>
+         <p>max temp:  {kelvinToCelcius(city.main.temp_max)} °C</p>
          <p>location:  {city.coord.lon}, {city.coord.lat}</p>
 
      </div>

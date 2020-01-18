@@ -10,7 +10,7 @@ const CityWeather = ()=>{
             <div style = {{border:'2px solid black', margin:'10px', paddingLeft: '10px'}}> 
                 <CityName city = {city}/>
                 <Description city = {city}/>
-                <Details city = {city}/>
+                <Details city = {city} kelvinToCelcius = {(kelvin)=>{return (kelvin-273).toFixed(2)}}/>
 
             </div>
         )
