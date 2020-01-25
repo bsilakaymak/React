@@ -5,7 +5,7 @@ const buttonStyle = {
     margin:"auto",
     outline:"none",
     border: "3px solid black",
-    background: "yellow",
+    background: "#3282b8",
     marginTop: "3%",
     padding:"1%",
     height: "3em",

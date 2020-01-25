@@ -6,7 +6,7 @@ import Loading from './Loading';
 
 
 const friendStyle = {
-    borderBottom:"10px solid yellow",
+    borderBottom:"10px solid #3282b8",
     padding:"2%",
 
 }

@@ -4,8 +4,8 @@ const buttonStyle = {
     width:"10%",
     margin:"auto",
     outline:"none",
-    border: "5px solid black",
-    background: "yellow",
+    border: "4px solid black",
+    background: "#3282b8",
     marginTop: "3%",
     padding:"1%",
     height: "5em"
