@@ -8,6 +8,7 @@ import Loading from './Loading';
 const friendStyle = {
     borderBottom:"10px solid yellow",
     padding:"2%",
+
 }
 
 function Friend(){
