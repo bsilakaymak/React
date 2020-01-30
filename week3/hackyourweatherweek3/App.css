@@ -1,0 +1,86 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.App{
+  width: 30%;
+  margin: auto;
+  text-align: left;
+}
+
+.orangeMsg{
+  text-align: center;
+  color: #F88E1E;
+  margin: 1em; 
+}
+
+/*Search bar and input area*/
+#input-area{
+  border: none;
+  height: 1.75em;
+  border-bottom: 2px solid #0f4c75;
+  font-size: 1.5em;
+  color: #0F4C75;
+}
+
+#form-area{
+  width: 15em;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+#submit-button{
+  width: 30%;
+  margin: auto;
+  outline: none;
+  border: none;
+  background: #3282b8;
+  margin-top: 5%;
+  padding: 1%;
+  height: 3em;
+  color: #0F4C75;
+  font-family: "Arial";
+}
+
+#submit-button:hover{
+  border:3px solid #F88E1E;
+  transform: scale(1.1);
+  cursor: pointer;
+  color:#F88E1E;
+}
+
+
+/*elements containing weather info and remove button*/
+#info{
+  margin:5% auto;
+  width: 18em;
+  border: 3px solid #0f4c75;
+  padding: 2%;
+  color: #0f4c75;
+  position:relative;
+}
+
+#remove-button{
+  width: 2em;
+  height: 2em;
+  background-color: #F88E1E;
+  border: 5px solid #3282B8;
+  outline: none;
+  border-radius: 50%;
+  position: absolute;
+  top: -.85em;
+  right: -.85em;
+  font-size: 1em;
+  font-weight: bold;
+  color: #3282B8
+}
+
+#remove-button:hover{
+   transform: scale(1.15);
+   background-color:#3282B8;
+   border-color:#F88E1E;
+   color:#F88E1E;
+   cursor:pointer;
+}
