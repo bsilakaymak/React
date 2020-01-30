@@ -1,13 +1,12 @@
-import React from 'react';
+import React from "react";
 
-const Joke = ({joke})=>{
-    return(
+const Joke = ({ joke }) => {
+  return (
     <div>
       <p>{joke.setup}</p>
-      <p>{joke.punchline}</p>  
+      <p>{joke.punchline}</p>
     </div>
-    
-    )
-}
+  );
+};
 
 export default Joke;
