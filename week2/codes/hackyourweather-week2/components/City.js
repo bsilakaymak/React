@@ -6,7 +6,7 @@ const City = () => {
   const [cityWeather, setCityWeather] = useState([]);
   const [isLoading, setLoading] = useState(false);
   const [hasError, setError] = useState(false);
-  const [indexMessage, setIndexMessage] = useState("Weatherrr!");
+  const [indexMessage, setIndexMessage] = useState("");
   function getCity(city) {
     setLoading(true);
 
@@ -33,7 +33,7 @@ const City = () => {
     return (
       <div>
         <Form getCity={getCity} />
-        {indexMessage === "Success" && <CityInfo cityWeather={cityWeather} />}
+        {cityWeather && <CityInfo cityWeather={cityWeather} />}
       </div>
     );
   }
