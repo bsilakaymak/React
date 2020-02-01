@@ -19,6 +19,7 @@ const Form = ({ getCity }) => {
         placeholder="Search for a city"
         value={city}
         required
+        autoComplete="off"
         onChange={e => {
           setCity(e.target.value);
         }}

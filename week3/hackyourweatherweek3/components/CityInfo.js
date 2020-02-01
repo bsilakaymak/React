@@ -16,7 +16,7 @@ const CityInfo = ({ cityWeather, remove }) => {
                     return (kelvin - 273).toFixed(2);
                   }}
                 />
-                <RemoveButton removeCity={remove} item={item} />
+                <RemoveButton handleOnClick={remove} item={item} />
               </div>
             );
           });

@@ -6,7 +6,6 @@ const CityWeatherApp = () => {
   const [cityWeather, setCityWeather] = useState([]);
   const [isLoading, setLoading] = useState(false);
   const [hasError, setError] = useState(false);
-  const [statusMessage, setStatusMessage] = useState(" ");
   const [feedback, setFeedback] = useState(
     "Type the city name to start searching"
   );
@@ -25,7 +24,6 @@ const CityWeatherApp = () => {
           setFeedback("Keep searching");
         }
         if (data.cod !== 200) setFeedback("CITY NOT FOUND");
-        setStatusMessage("Success");
       })
       .catch(err => {
         setError(true);
@@ -47,7 +45,7 @@ const CityWeatherApp = () => {
       <div>
         <h3 className="orangeMsg">{feedback}</h3>
         <Form getCity={getCity} />
-        {statusMessage === "Success" && (
+        {cityWeather && (
           <CityInfo cityWeather={cityWeather} remove={removeCity} />
         )}
       </div>
