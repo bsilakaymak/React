@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  width: 100%;
+  margin: auto;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+
+.orangeMsg {
+  text-align: center;
+  color: #f88e1e;
+  margin: 1em;
+}
+
+/*Search bar and input area*/
+#input-area {
+  border: none;
+  height: 1.75em;
+  border-bottom: 2px solid #0f4c75;
+  font-size: 1.5em;
+  color: #0f4c75;
+}
+
+#form-area {
+  width: 15em;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+#submit-button {
+  width: 30%;
+  margin: auto;
+  outline: none;
+  border: none;
+  background: #3282b8;
+  margin-top: 5%;
+  padding: 1%;
+  height: 3em;
+  color: #0f4c75;
+  font-family: "Arial";
+}
+
+#submit-button:hover{
+  border: 3px solid #f88e1e;
+  transform: scale(1.1);
+  cursor: pointer;
+  color: #f88e1e;
+}
+
+/*elements containing weather info and remove button*/
+#info {
+  margin: 5% auto;
+  width: 18em;
+  border: 3px solid #0f4c75;
+  padding: 2%;
+  color: #0f4c75;
+  position: relative;
+}
+
+#remove-button {
+  width: 2em;
+  height: 2em;
+  background-color: #f88e1e;
+  border: 5px solid #3282b8;
+  outline: none;
+  border-radius: 50%;
+  position: absolute;
+  top: -0.85em;
+  right: -0.85em;
+  font-size: 1em;
+  font-weight: bold;
+  color: #3282b8;
+}
+
+#remove-button:hover {
+  transform: scale(1.15);
+  background-color: #3282b8;
+  border-color: #f88e1e;
+  color: #f88e1e;
+  cursor: pointer;
+}
+
+/*Graph Page*/
+#link-to-graph{
+  text-decoration: none;
+  color:#0f4c75
+}
+#link-to-graph:hover{
+  color:#f88e1e
+}
+.weather-details{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.goback-button{
+  width: 10%;
+  margin: auto;
+  outline: none;
+  border: none;
+  background: #0f4c75;
+  margin-top: 2%;
+  padding: 1%;
+  height: 3em;
+  color: #f88e1e;
+  font-weight: 600;
+  font-family: "Arial";
+}
+
+.goback-button:hover {
+  cursor: pointer;
+  color:#0f4c75;
+  background-color: #f88e1e;
+}
+
+
+/*Loading */
+#loading {
+  margin:auto;
+  display: inline-block;
+  width: 2em;
+  height: 2em;
+  border: 0.5em solid rgba(15, 76, 117, 0.3);
+  border-radius: 50%;
+  border-top-color: rgb(15,76,117);
+  animation: spin 1s ease-in-out infinite;
+  -webkit-animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+  to { -webkit-transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+  to { -webkit-transform: rotate(360deg); }
+}
