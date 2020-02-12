@@ -14,19 +14,28 @@ const Form = ({ getCity }) => {
 
   return (
     <div className="form-area">
-      <input
-        className="input-area"
-        placeholder="Search for a city"
-        value={city}
-        required
-        autoComplete="off"
-        onChange={e => {
-          setCity(e.target.value);
+      <form
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "center",
+          alignItems: "center"
         }}
-      />
-      <button className="submit-button" onClick={submit}>
-        Search
-      </button>
+      >
+        <input
+          className="input-area"
+          placeholder="Search for a city"
+          value={city}
+          required
+          autoComplete="off"
+          onChange={e => {
+            setCity(e.target.value);
+          }}
+        />
+        <button className="submit-button" onClick={submit}>
+          Search
+        </button>
+      </form>
     </div>
   );
 };
