@@ -13,9 +13,9 @@ const Form = ({ getCity }) => {
   };
 
   return (
-    <div id="form-area">
+    <div className="form-area">
       <input
-        id="input-area"
+        className="input-area"
         placeholder="Search for a city"
         value={city}
         required
@@ -24,7 +24,7 @@ const Form = ({ getCity }) => {
           setCity(e.target.value);
         }}
       />
-      <button id="submit-button" onClick={submit}>
+      <button className="submit-button" onClick={submit}>
         Search
       </button>
     </div>

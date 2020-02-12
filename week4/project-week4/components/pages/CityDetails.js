@@ -44,7 +44,7 @@ const CityDetails = () => {
         {graphData.city && graphData.city.country} - 5 Days Forecast{" "}
       </h3>
       <ResponsiveContainer width="75%" height={250}>
-        <AreaChart data={graphData.list}>
+        <AreaChart data={graphData.list} margin={{right: 15, left: -15}}>
           <XAxis stroke="#0f4c75" dataKey="dt_txt" />
           <YAxis stroke="#0f4c75" />
           <Tooltip />

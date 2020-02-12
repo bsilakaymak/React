@@ -6,10 +6,10 @@ import RemoveButton from "./RemoveButton";
 import { Link } from "react-router-dom";
 
 const CityInfo = ({ cityWeather, remove }) => {
-  return cityWeather.map(item => {
+  return cityWeather.map((item, i) => {
     return (
-      <div id="info">
-        <Link to={"/" + item.id} id="link-to-graph">
+      <div className="info" key={i}>
+        <Link to={"/" + item.id} className="link-to-graph">
           <CityName item={item} />
           <Description item={item} />
           <Details item={item} />
