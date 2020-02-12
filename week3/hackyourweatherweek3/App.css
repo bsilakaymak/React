@@ -18,7 +18,7 @@
 }
 
 /*Search bar and input area*/
-#input-area {
+.input-area {
   border: none;
   height: 1.75em;
   border-bottom: 2px solid #0f4c75;
@@ -26,14 +26,14 @@
   color: #0f4c75;
 }
 
-#form-area {
+.form-area {
   width: 15em;
   margin: auto;
   display: flex;
   flex-direction: column;
 }
 
-#submit-button {
+.submit-button {
   width: 30%;
   margin: auto;
   outline: none;
@@ -46,7 +46,7 @@
   font-family: "Arial";
 }
 
-#submit-button:hover {
+.submit-button:hover {
   border: 3px solid #f88e1e;
   transform: scale(1.1);
   cursor: pointer;
@@ -54,7 +54,7 @@
 }
 
 /*elements containing weather info and remove button*/
-#info {
+.info {
   margin: 5% auto;
   width: 18em;
   border: 3px solid #0f4c75;
@@ -63,7 +63,7 @@
   position: relative;
 }
 
-#remove-button {
+.remove-button {
   width: 2em;
   height: 2em;
   background-color: #f88e1e;
@@ -78,7 +78,7 @@
   color: #3282b8;
 }
 
-#remove-button:hover {
+.remove-button:hover {
   transform: scale(1.15);
   background-color: #3282b8;
   border-color: #f88e1e;
